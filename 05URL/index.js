@@ -5,7 +5,7 @@ console.log(req.url);
 
 const pathName  =  req.url;
 
-if(pathName  == '/'){
+if(pathName  === '/'){
     res.end = "Hello from server";
 }else if (pathName == "sahil"){
     res.end("Hello from nakur");
