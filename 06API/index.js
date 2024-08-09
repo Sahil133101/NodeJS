@@ -1,4 +1,4 @@
-const http = require('http');
+ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
@@ -9,7 +9,7 @@ const myserver = http.createServer((req, res) => {
 
     if (pathname === '/') {
         res.writeHead(200, { 'Content-Type': 'text/plain' });
-        res.end("Hello, world!");
+        res.end("sahil, world!");
     } else if (pathname === '/api') {
         // Read data from data.json file
         const dataPath = path.join(__dirname, 'data.json');
@@ -32,7 +32,7 @@ const myserver = http.createServer((req, res) => {
 });
 
 // Start the server on port 8000
-const PORT = 8000;
+const PORT = 3000;
 myserver.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
